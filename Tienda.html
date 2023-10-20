@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L Online Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Tienda.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="menu">
+            <a class="navbar-brand" href="#"><img class="logo" src="L.jpg">Online Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="cat" href="Catalogos.html">Catalogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tnd" href="Tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="arc" href="Acerca.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="out" href="Form.html">Salir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center">Tienda</h1>
+        <div class="prt1">
+        <div class="crow" id="catalogo">
+            <!-- Las tarjetas de productos se generarán dinámicamente con JavaScript -->
+        </div>
+        <div class="contcalc">
+        <div id="calculator"class="calculator">
+            <div class="display">0</div>
+            <div class="buttons"><!-- Botones de la calculadora -->
+                <div class="fil">
+                <button class="cbtn">9</button>
+                <button class="cbtn">8</button>
+                <button class="cbtn">7</button>
+                <button class="cbtn">C</button></div>
+                <div class="fil">
+                <button class="cbtn">6</button>
+                <button class="cbtn">5</button>
+                <button class="cbtn">4</button>
+                <button class="cbtn">+</button></div>
+                <div class="fil">
+                <button class="cbtn">3</button>
+                <button class="cbtn">2</button>
+                <button class="cbtn">1</button>
+                <button class="cbtn">-</button></div>
+                <div class="fil">
+                <button class="cbtn">*</button>
+                <button class="cbtn">0</button>
+                <button class="cbtn">/</button>
+                <button class="cbtn">=</button></div>
+    </div>
+    </div>
+    <button id="habilitar" class="btncontrol">Habilitar Calculadora</button>
+    <button id="deshabilitar" class="btncontrol">Deshabilitar Calculadora</button>
+    </div>
+</div>
+        <hr>
+        <div class="rrow">
+            <div class="col-md-4 offset-md-8">
+                <h3 class="text-center">Resumen de Compra</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Clave Producto</th>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Subtototal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resumenCompra">
+                        <!-- Los detalles de la compra se generarán dinámicamente con JavaScript -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total:</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td id="total"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <button class="btn btn-primary" id="finalizarCompra">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+    <script src="Tienda.js"></script>
+    <script src="scriptCal.js"></script>
+</body>
+</html>

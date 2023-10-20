@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L Online Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Tienda.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="menu">
+            <a class="navbar-brand" href="#"><img class="logo" src="L.jpg">Online Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="cat" href="Catalogos.html">Catalogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tnd" href="Tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="arc" href="Acerca.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="out" href="Form.html">Salir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="AcercaDe">
+        <h1>Acerca de</h1>
+        <h6>¿Qué es L Online Store? </h6>
+        <p> Se trata de una tienda en línea donde, si eres administrador, puedes no solamente comprar, sino tambien
+            subir tus productos. Nuestra misión es facilitarte el acceso a la compra y venta de productos, y darte
+            una experiencia de compra/venta conveniente desde la comodidad de tu hogar.</p>
+        <h6>¿Cómo funciona L Online Store? </h6>
+        <p>Para acceder a la página requieres loguearte primero, si tratas de ingresar a cualquier subpagina de
+            L Online Store, se te redirigirá automaticamente a la pagina de login.
+        <br>
+        Cualquier nombre de usuario y contraseña son válidos siempre y cuando no se trate de una cadena vacía.
+        Tambien se tiene cierto nombre de usuario y contraseña para acceder como administrador, este tipo de usuario
+        puede añadir, modificar o eliminar productos al catalogo de ventas, a diferencia de un cliente, el cual
+        solamente puede realizar compras.
+        <br>
+        Se tiene un despliegue de una calculadora en el apartado de tienda, lo cual puede ser de utilidad si se desea
+        convertir el tipo de moneda del producto a tu moneda nacional por medio de una operación.
+    </p>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Agrega un evento al salir
+    const out = document.getElementById("out");
+    out.addEventListener("click", function () {
+        localStorage.removeItem("usuario");
+        localStorage.removeItem("contraseña");
+});
+});
+</script>
+</body>
+</html>
